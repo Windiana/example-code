@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="/src/css/simple-sidebar.css" rel="stylesheet">
+
+  <!-- add custom style if needed -->
+  <link href="/src/css/custom.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/src/images/favicon.ico" type="image/x-icon">
+
+  <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="list-group list-group-flush">
+        <a href="/index.html" class="list-group-item list-group-item-action bg-light">Home</a>
+        <a href="/faq/index.html" class="list-group-item list-group-item-action bg-light">FAQ</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mt-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home 
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faq/index.html">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div id="banner" class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="/src/images/banner.jpg" class="img-fluid">
+          </div>
+          <div class="col-12 d-flex justify-content-center mt-3">
+            <h5 class="text-center mdl-color-text--primary">
+              My First PWA
+            </h5>
+            <div id="shared-moments"></div>
+          </div>
+        </div>
+
+        <!-- <div id="content-wrapper" class="row">
+          <div class="col-6 my-3">
+            <img style="max-width: 100%;" src="https://cdn.pixabay.com/photo/2016/10/17/10/52/wind-farm-1747331__340.jpg">
+          </div>
+          <div class="col-6">
+            My tasks
+          </div>
+        </div> -->
+        <div id="content-wrapper">
+        </div>
+
+        <div class="btn-add-wrapper">
+          <button class="btn btn-lg btn-primary" id="add-btn">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade show" id="addModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body">
+            <form action="/action_page.php">
+              <div class="form-group">
+                <input type="text" class="form-control" id="task" placeholder="task">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" id="description" placeholder="description">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/src/js/jquery.min.js"></script>
+  <script src="/src/js/bootstrap.min.js"></script>
+  <script src="/src/js/idb.js"></script>
+  <script src="/src/js/dbConn.js"></script>
+  
+  <script src="/src/js/main.js"></script>
+  
+  <!-- Menu Toggle Script -->
+  <script src="/src/js/custom.js"></script>
+
+  
+</body>
+
+</html>

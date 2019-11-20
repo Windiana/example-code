@@ -1,0 +1,10 @@
+#banner img {
+  height: 300px;
+}
+
+.btn-add-wrapper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+}
